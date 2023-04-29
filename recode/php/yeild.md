@@ -33,3 +33,7 @@ foreach ($a as $value) {
 ```
 
 
+**读取大文件** 生成器（协程）yield或迭代器（Iterator）
+**提交大文件** 
+	php.ini中max_execution_time=0（最大执行时间）；post_max_size=150M（ POST 数据所允许的最大大小），upload_max_filesize（上传的文件的最大大小）
+	nginx.conf中client_max_body_size **M；（解决413错误，请求POST请求body实体太大。）

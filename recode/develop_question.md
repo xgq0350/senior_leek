@@ -16,4 +16,8 @@ sysctl vm.swappiness=0    //临时修改vm.swappiness
     #最后一行加上
     vm.swappiness=0
    sysctl -p  //使得修改生效
-   
+
+1.在docker里安装ps命令（apt install procps）
+出错提示：Unable to locate package procps
+
+解决：apt-get update
